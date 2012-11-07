@@ -1,0 +1,33 @@
+the plan so far:
+
+Steve has already created a network layer 2 pipe to json output
+collect json output in node collector and filter to note set
+send note set to client and if midi report midi
+else play loaded voices (audiotags)
+
+Things to determine
+noise format:
+ambient background
+mid level character voices
+high level detail voices
+
+duration:
+How long does a single ambient background play
+how frequently do mid level voices change
+how frequently to we play high level voices
+
+filters:
+how do we filter messages to the appropriate buckets
+3 ambient buckets
+7 mid level buckets
+21 high level buckets
+
+voice arrangement:
+ambient voice should at least 3 measures
+mid level voice should be at most 1 measure
+high level voice should be at most 3 notes
+
+This is just a rough draft of some ideas to get us going. These numeric values
+should be adjustable from the client so we can tweak it until it sounds good.
+Steve had this really good idea for controlling stuf on the client, but maybe
+storage would be a good idea too so we could save voice sets.
